@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8213E18F1AF503A90071A570 /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8213E18E1AF503A90071A570 /* FLIROneSDK.framework */; };
+		8213E1911AF504360071A570 /* FLIROneSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8213E1901AF504360071A570 /* FLIROneSDK.bundle */; };
+		824C01EF1A3DB501005B132E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824C01EE1A3DB501005B132E /* MenuViewController.m */; };
+		824C01F11A3DBAC3005B132E /* playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 824C01F01A3DBAC3005B132E /* playbutton.png */; };
+		8259E6091A3C8B9A00EF45DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8259E6081A3C8B9A00EF45DB /* main.m */; };
+		8259E60C1A3C8B9A00EF45DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8259E60B1A3C8B9A00EF45DB /* AppDelegate.m */; };
+		8259E60F1A3C8B9A00EF45DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8259E60E1A3C8B9A00EF45DB /* ViewController.m */; };
+		8259E6121A3C8B9A00EF45DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6101A3C8B9A00EF45DB /* Main.storyboard */; };
+		8259E6141A3C8B9A00EF45DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6131A3C8B9A00EF45DB /* Images.xcassets */; };
+		8259E6171A3C8B9A00EF45DB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6151A3C8B9A00EF45DB /* LaunchScreen.xib */; };
+		8259E6231A3C8B9A00EF45DB /* FLIR_One_QuickStartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8259E6221A3C8B9A00EF45DB /* FLIR_One_QuickStartTests.m */; };
+		8259E6311A3C8C5C00EF45DB /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8259E6301A3C8C5C00EF45DB /* libstdc++.dylib */; };
+		8259E6521A3CA3F600EF45DB /* slider-default-handle-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6341A3CA3F600EF45DB /* slider-default-handle-highlighted.png */; };
+		8259E6531A3CA3F600EF45DB /* slider-default-handle-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6351A3CA3F600EF45DB /* slider-default-handle-highlighted@2x.png */; };
+		8259E6541A3CA3F600EF45DB /* slider-default-handle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6361A3CA3F600EF45DB /* slider-default-handle.png */; };
+		8259E6551A3CA3F600EF45DB /* slider-default-handle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6371A3CA3F600EF45DB /* slider-default-handle@2x.png */; };
+		8259E6561A3CA3F600EF45DB /* slider-default-track.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6381A3CA3F600EF45DB /* slider-default-track.png */; };
+		8259E6571A3CA3F600EF45DB /* slider-default-track@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6391A3CA3F600EF45DB /* slider-default-track@2x.png */; };
+		8259E6581A3CA3F600EF45DB /* slider-default-trackBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E63A1A3CA3F600EF45DB /* slider-default-trackBackground.png */; };
+		8259E6591A3CA3F600EF45DB /* slider-default-trackCrossedOver.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E63B1A3CA3F600EF45DB /* slider-default-trackCrossedOver.png */; };
+		8259E65A1A3CA3F600EF45DB /* slider-default-trackCrossedOver@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E63C1A3CA3F600EF45DB /* slider-default-trackCrossedOver@2x.png */; };
+		8259E65B1A3CA3F600EF45DB /* slider-default_trackBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E63D1A3CA3F600EF45DB /* slider-default_trackBackground@2x.png */; };
+		8259E65C1A3CA3F600EF45DB /* slider-default7-handle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E63F1A3CA3F600EF45DB /* slider-default7-handle.png */; };
+		8259E65D1A3CA3F600EF45DB /* slider-default7-handle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6401A3CA3F600EF45DB /* slider-default7-handle@2x.png */; };
+		8259E65E1A3CA3F600EF45DB /* slider-default7-track.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6411A3CA3F600EF45DB /* slider-default7-track.png */; };
+		8259E65F1A3CA3F600EF45DB /* slider-default7-track@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6421A3CA3F600EF45DB /* slider-default7-track@2x.png */; };
+		8259E6601A3CA3F600EF45DB /* slider-default7-trackBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6431A3CA3F600EF45DB /* slider-default7-trackBackground.png */; };
+		8259E6611A3CA3F600EF45DB /* slider-default7-trackBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6441A3CA3F600EF45DB /* slider-default7-trackBackground@2x.png */; };
+		8259E6621A3CA3F600EF45DB /* slider-default7-trackCrossedOver.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6451A3CA3F600EF45DB /* slider-default7-trackCrossedOver.png */; };
+		8259E6631A3CA3F600EF45DB /* slider-default7-trackCrossedOver@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6461A3CA3F600EF45DB /* slider-default7-trackCrossedOver@2x.png */; };
+		8259E6641A3CA3F600EF45DB /* slider-metal-handle-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6481A3CA3F600EF45DB /* slider-metal-handle-highlighted.png */; };
+		8259E6651A3CA3F600EF45DB /* slider-metal-handle-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E6491A3CA3F600EF45DB /* slider-metal-handle-highlighted@2x.png */; };
+		8259E6661A3CA3F600EF45DB /* slider-metal-handle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E64A1A3CA3F600EF45DB /* slider-metal-handle.png */; };
+		8259E6671A3CA3F600EF45DB /* slider-metal-handle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E64B1A3CA3F600EF45DB /* slider-metal-handle@2x.png */; };
+		8259E6681A3CA3F600EF45DB /* slider-metal-track.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E64C1A3CA3F600EF45DB /* slider-metal-track.png */; };
+		8259E6691A3CA3F600EF45DB /* slider-metal-track@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E64D1A3CA3F600EF45DB /* slider-metal-track@2x.png */; };
+		8259E66A1A3CA3F600EF45DB /* slider-metal-trackBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E64E1A3CA3F600EF45DB /* slider-metal-trackBackground.png */; };
+		8259E66B1A3CA3F600EF45DB /* slider-metal-trackBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E64F1A3CA3F600EF45DB /* slider-metal-trackBackground@2x.png */; };
+		8259E66C1A3CA3F600EF45DB /* NMRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8259E6511A3CA3F600EF45DB /* NMRangeSlider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8259E61D1A3C8B9A00EF45DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8259E5FB1A3C8B9A00EF45DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8259E6021A3C8B9A00EF45DB;
+			remoteInfo = "FLIR One QuickStart";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8213E18E1AF503A90071A570 /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLIROneSDK.framework; path = "../../../../Desktop/FLIROne/FLIR One QuickStart/FLIROneSDK/FLIROneSDK.framework"; sourceTree = "<group>"; };
+		8213E1901AF504360071A570 /* FLIROneSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FLIROneSDK.bundle; path = "../../../../Desktop/FLIROne/FLIR One QuickStart/FLIROneSDK/FLIROneSDK.bundle"; sourceTree = "<group>"; };
+		824C01ED1A3DB501005B132E /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		824C01EE1A3DB501005B132E /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		824C01F01A3DBAC3005B132E /* playbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbutton.png; sourceTree = "<group>"; };
+		8259E6031A3C8B9A00EF45DB /* FLIR One QuickStart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FLIR One QuickStart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8259E6071A3C8B9A00EF45DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8259E6081A3C8B9A00EF45DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8259E60A1A3C8B9A00EF45DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8259E60B1A3C8B9A00EF45DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8259E60D1A3C8B9A00EF45DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8259E60E1A3C8B9A00EF45DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8259E6111A3C8B9A00EF45DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8259E6131A3C8B9A00EF45DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8259E6161A3C8B9A00EF45DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8259E61C1A3C8B9A00EF45DB /* FLIR One QuickStartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FLIR One QuickStartTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8259E6211A3C8B9A00EF45DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8259E6221A3C8B9A00EF45DB /* FLIR_One_QuickStartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLIR_One_QuickStartTests.m; sourceTree = "<group>"; };
+		8259E6301A3C8C5C00EF45DB /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		8259E6341A3CA3F600EF45DB /* slider-default-handle-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default-handle-highlighted.png"; sourceTree = "<group>"; };
+		8259E6351A3CA3F600EF45DB /* slider-default-handle-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default-handle-highlighted@2x.png"; sourceTree = "<group>"; };
+		8259E6361A3CA3F600EF45DB /* slider-default-handle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default-handle.png"; sourceTree = "<group>"; };
+		8259E6371A3CA3F600EF45DB /* slider-default-handle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default-handle@2x.png"; sourceTree = "<group>"; };
+		8259E6381A3CA3F600EF45DB /* slider-default-track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default-track.png"; sourceTree = "<group>"; };
+		8259E6391A3CA3F600EF45DB /* slider-default-track@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default-track@2x.png"; sourceTree = "<group>"; };
+		8259E63A1A3CA3F600EF45DB /* slider-default-trackBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default-trackBackground.png"; sourceTree = "<group>"; };
+		8259E63B1A3CA3F600EF45DB /* slider-default-trackCrossedOver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default-trackCrossedOver.png"; sourceTree = "<group>"; };
+		8259E63C1A3CA3F600EF45DB /* slider-default-trackCrossedOver@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default-trackCrossedOver@2x.png"; sourceTree = "<group>"; };
+		8259E63D1A3CA3F600EF45DB /* slider-default_trackBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default_trackBackground@2x.png"; sourceTree = "<group>"; };
+		8259E63F1A3CA3F600EF45DB /* slider-default7-handle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default7-handle.png"; sourceTree = "<group>"; };
+		8259E6401A3CA3F600EF45DB /* slider-default7-handle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default7-handle@2x.png"; sourceTree = "<group>"; };
+		8259E6411A3CA3F600EF45DB /* slider-default7-track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default7-track.png"; sourceTree = "<group>"; };
+		8259E6421A3CA3F600EF45DB /* slider-default7-track@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default7-track@2x.png"; sourceTree = "<group>"; };
+		8259E6431A3CA3F600EF45DB /* slider-default7-trackBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default7-trackBackground.png"; sourceTree = "<group>"; };
+		8259E6441A3CA3F600EF45DB /* slider-default7-trackBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default7-trackBackground@2x.png"; sourceTree = "<group>"; };
+		8259E6451A3CA3F600EF45DB /* slider-default7-trackCrossedOver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default7-trackCrossedOver.png"; sourceTree = "<group>"; };
+		8259E6461A3CA3F600EF45DB /* slider-default7-trackCrossedOver@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-default7-trackCrossedOver@2x.png"; sourceTree = "<group>"; };
+		8259E6481A3CA3F600EF45DB /* slider-metal-handle-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-metal-handle-highlighted.png"; sourceTree = "<group>"; };
+		8259E6491A3CA3F600EF45DB /* slider-metal-handle-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-metal-handle-highlighted@2x.png"; sourceTree = "<group>"; };
+		8259E64A1A3CA3F600EF45DB /* slider-metal-handle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-metal-handle.png"; sourceTree = "<group>"; };
+		8259E64B1A3CA3F600EF45DB /* slider-metal-handle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-metal-handle@2x.png"; sourceTree = "<group>"; };
+		8259E64C1A3CA3F600EF45DB /* slider-metal-track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-metal-track.png"; sourceTree = "<group>"; };
+		8259E64D1A3CA3F600EF45DB /* slider-metal-track@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-metal-track@2x.png"; sourceTree = "<group>"; };
+		8259E64E1A3CA3F600EF45DB /* slider-metal-trackBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-metal-trackBackground.png"; sourceTree = "<group>"; };
+		8259E64F1A3CA3F600EF45DB /* slider-metal-trackBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-metal-trackBackground@2x.png"; sourceTree = "<group>"; };
+		8259E6501A3CA3F600EF45DB /* NMRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMRangeSlider.h; sourceTree = "<group>"; };
+		8259E6511A3CA3F600EF45DB /* NMRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMRangeSlider.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8259E6001A3C8B9A00EF45DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8213E18F1AF503A90071A570 /* FLIROneSDK.framework in Frameworks */,
+				8259E6311A3C8C5C00EF45DB /* libstdc++.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8259E6191A3C8B9A00EF45DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8259E5FA1A3C8B9A00EF45DB = {
+			isa = PBXGroup;
+			children = (
+				8259E6321A3CA3F600EF45DB /* NMRangeSlider */,
+				8259E6301A3C8C5C00EF45DB /* libstdc++.dylib */,
+				8259E6051A3C8B9A00EF45DB /* FLIR One QuickStart */,
+				8259E61F1A3C8B9A00EF45DB /* FLIR One QuickStartTests */,
+				8259E6041A3C8B9A00EF45DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8259E6041A3C8B9A00EF45DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8259E6031A3C8B9A00EF45DB /* FLIR One QuickStart.app */,
+				8259E61C1A3C8B9A00EF45DB /* FLIR One QuickStartTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8259E6051A3C8B9A00EF45DB /* FLIR One QuickStart */ = {
+			isa = PBXGroup;
+			children = (
+				824C01F01A3DBAC3005B132E /* playbutton.png */,
+				8259E60A1A3C8B9A00EF45DB /* AppDelegate.h */,
+				8259E60B1A3C8B9A00EF45DB /* AppDelegate.m */,
+				8259E60D1A3C8B9A00EF45DB /* ViewController.h */,
+				8259E60E1A3C8B9A00EF45DB /* ViewController.m */,
+				824C01ED1A3DB501005B132E /* MenuViewController.h */,
+				824C01EE1A3DB501005B132E /* MenuViewController.m */,
+				8259E6101A3C8B9A00EF45DB /* Main.storyboard */,
+				8259E6131A3C8B9A00EF45DB /* Images.xcassets */,
+				8259E6151A3C8B9A00EF45DB /* LaunchScreen.xib */,
+				8259E6061A3C8B9A00EF45DB /* Supporting Files */,
+			);
+			path = "FLIR One QuickStart";
+			sourceTree = "<group>";
+		};
+		8259E6061A3C8B9A00EF45DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8213E1901AF504360071A570 /* FLIROneSDK.bundle */,
+				8213E18E1AF503A90071A570 /* FLIROneSDK.framework */,
+				8259E6071A3C8B9A00EF45DB /* Info.plist */,
+				8259E6081A3C8B9A00EF45DB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8259E61F1A3C8B9A00EF45DB /* FLIR One QuickStartTests */ = {
+			isa = PBXGroup;
+			children = (
+				8259E6221A3C8B9A00EF45DB /* FLIR_One_QuickStartTests.m */,
+				8259E6201A3C8B9A00EF45DB /* Supporting Files */,
+			);
+			path = "FLIR One QuickStartTests";
+			sourceTree = "<group>";
+		};
+		8259E6201A3C8B9A00EF45DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8259E6211A3C8B9A00EF45DB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8259E6321A3CA3F600EF45DB /* NMRangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				8259E6331A3CA3F600EF45DB /* DefaultTheme */,
+				8259E63E1A3CA3F600EF45DB /* DefaultTheme7 */,
+				8259E6471A3CA3F600EF45DB /* MetalTheme */,
+				8259E6501A3CA3F600EF45DB /* NMRangeSlider.h */,
+				8259E6511A3CA3F600EF45DB /* NMRangeSlider.m */,
+			);
+			name = NMRangeSlider;
+			path = "FLIR One QuickStart/NMRangeSlider";
+			sourceTree = "<group>";
+		};
+		8259E6331A3CA3F600EF45DB /* DefaultTheme */ = {
+			isa = PBXGroup;
+			children = (
+				8259E6341A3CA3F600EF45DB /* slider-default-handle-highlighted.png */,
+				8259E6351A3CA3F600EF45DB /* slider-default-handle-highlighted@2x.png */,
+				8259E6361A3CA3F600EF45DB /* slider-default-handle.png */,
+				8259E6371A3CA3F600EF45DB /* slider-default-handle@2x.png */,
+				8259E6381A3CA3F600EF45DB /* slider-default-track.png */,
+				8259E6391A3CA3F600EF45DB /* slider-default-track@2x.png */,
+				8259E63A1A3CA3F600EF45DB /* slider-default-trackBackground.png */,
+				8259E63B1A3CA3F600EF45DB /* slider-default-trackCrossedOver.png */,
+				8259E63C1A3CA3F600EF45DB /* slider-default-trackCrossedOver@2x.png */,
+				8259E63D1A3CA3F600EF45DB /* slider-default_trackBackground@2x.png */,
+			);
+			path = DefaultTheme;
+			sourceTree = "<group>";
+		};
+		8259E63E1A3CA3F600EF45DB /* DefaultTheme7 */ = {
+			isa = PBXGroup;
+			children = (
+				8259E63F1A3CA3F600EF45DB /* slider-default7-handle.png */,
+				8259E6401A3CA3F600EF45DB /* slider-default7-handle@2x.png */,
+				8259E6411A3CA3F600EF45DB /* slider-default7-track.png */,
+				8259E6421A3CA3F600EF45DB /* slider-default7-track@2x.png */,
+				8259E6431A3CA3F600EF45DB /* slider-default7-trackBackground.png */,
+				8259E6441A3CA3F600EF45DB /* slider-default7-trackBackground@2x.png */,
+				8259E6451A3CA3F600EF45DB /* slider-default7-trackCrossedOver.png */,
+				8259E6461A3CA3F600EF45DB /* slider-default7-trackCrossedOver@2x.png */,
+			);
+			path = DefaultTheme7;
+			sourceTree = "<group>";
+		};
+		8259E6471A3CA3F600EF45DB /* MetalTheme */ = {
+			isa = PBXGroup;
+			children = (
+				8259E6481A3CA3F600EF45DB /* slider-metal-handle-highlighted.png */,
+				8259E6491A3CA3F600EF45DB /* slider-metal-handle-highlighted@2x.png */,
+				8259E64A1A3CA3F600EF45DB /* slider-metal-handle.png */,
+				8259E64B1A3CA3F600EF45DB /* slider-metal-handle@2x.png */,
+				8259E64C1A3CA3F600EF45DB /* slider-metal-track.png */,
+				8259E64D1A3CA3F600EF45DB /* slider-metal-track@2x.png */,
+				8259E64E1A3CA3F600EF45DB /* slider-metal-trackBackground.png */,
+				8259E64F1A3CA3F600EF45DB /* slider-metal-trackBackground@2x.png */,
+			);
+			path = MetalTheme;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8259E6021A3C8B9A00EF45DB /* FLIR One QuickStart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8259E6261A3C8B9A00EF45DB /* Build configuration list for PBXNativeTarget "FLIR One QuickStart" */;
+			buildPhases = (
+				8259E5FF1A3C8B9A00EF45DB /* Sources */,
+				8259E6001A3C8B9A00EF45DB /* Frameworks */,
+				8259E6011A3C8B9A00EF45DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FLIR One QuickStart";
+			productName = "FLIR One QuickStart";
+			productReference = 8259E6031A3C8B9A00EF45DB /* FLIR One QuickStart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8259E61B1A3C8B9A00EF45DB /* FLIR One QuickStartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8259E6291A3C8B9A00EF45DB /* Build configuration list for PBXNativeTarget "FLIR One QuickStartTests" */;
+			buildPhases = (
+				8259E6181A3C8B9A00EF45DB /* Sources */,
+				8259E6191A3C8B9A00EF45DB /* Frameworks */,
+				8259E61A1A3C8B9A00EF45DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8259E61E1A3C8B9A00EF45DB /* PBXTargetDependency */,
+			);
+			name = "FLIR One QuickStartTests";
+			productName = "FLIR One QuickStartTests";
+			productReference = 8259E61C1A3C8B9A00EF45DB /* FLIR One QuickStartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8259E5FB1A3C8B9A00EF45DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Rupesh;
+				TargetAttributes = {
+					8259E6021A3C8B9A00EF45DB = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					8259E61B1A3C8B9A00EF45DB = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 8259E6021A3C8B9A00EF45DB;
+					};
+				};
+			};
+			buildConfigurationList = 8259E5FE1A3C8B9A00EF45DB /* Build configuration list for PBXProject "FLIR One QuickStart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8259E5FA1A3C8B9A00EF45DB;
+			productRefGroup = 8259E6041A3C8B9A00EF45DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8259E6021A3C8B9A00EF45DB /* FLIR One QuickStart */,
+				8259E61B1A3C8B9A00EF45DB /* FLIR One QuickStartTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8259E6011A3C8B9A00EF45DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8259E65A1A3CA3F600EF45DB /* slider-default-trackCrossedOver@2x.png in Resources */,
+				8259E6671A3CA3F600EF45DB /* slider-metal-handle@2x.png in Resources */,
+				8259E6611A3CA3F600EF45DB /* slider-default7-trackBackground@2x.png in Resources */,
+				8259E6541A3CA3F600EF45DB /* slider-default-handle.png in Resources */,
+				8259E65C1A3CA3F600EF45DB /* slider-default7-handle.png in Resources */,
+				8259E6561A3CA3F600EF45DB /* slider-default-track.png in Resources */,
+				8259E6121A3C8B9A00EF45DB /* Main.storyboard in Resources */,
+				8259E6691A3CA3F600EF45DB /* slider-metal-track@2x.png in Resources */,
+				8259E65E1A3CA3F600EF45DB /* slider-default7-track.png in Resources */,
+				8259E66B1A3CA3F600EF45DB /* slider-metal-trackBackground@2x.png in Resources */,
+				8259E6521A3CA3F600EF45DB /* slider-default-handle-highlighted.png in Resources */,
+				8259E6661A3CA3F600EF45DB /* slider-metal-handle.png in Resources */,
+				8259E6591A3CA3F600EF45DB /* slider-default-trackCrossedOver.png in Resources */,
+				8259E6171A3C8B9A00EF45DB /* LaunchScreen.xib in Resources */,
+				8259E6621A3CA3F600EF45DB /* slider-default7-trackCrossedOver.png in Resources */,
+				8259E6631A3CA3F600EF45DB /* slider-default7-trackCrossedOver@2x.png in Resources */,
+				8259E6531A3CA3F600EF45DB /* slider-default-handle-highlighted@2x.png in Resources */,
+				8213E1911AF504360071A570 /* FLIROneSDK.bundle in Resources */,
+				824C01F11A3DBAC3005B132E /* playbutton.png in Resources */,
+				8259E6651A3CA3F600EF45DB /* slider-metal-handle-highlighted@2x.png in Resources */,
+				8259E6641A3CA3F600EF45DB /* slider-metal-handle-highlighted.png in Resources */,
+				8259E6581A3CA3F600EF45DB /* slider-default-trackBackground.png in Resources */,
+				8259E66A1A3CA3F600EF45DB /* slider-metal-trackBackground.png in Resources */,
+				8259E6571A3CA3F600EF45DB /* slider-default-track@2x.png in Resources */,
+				8259E65B1A3CA3F600EF45DB /* slider-default_trackBackground@2x.png in Resources */,
+				8259E6141A3C8B9A00EF45DB /* Images.xcassets in Resources */,
+				8259E6681A3CA3F600EF45DB /* slider-metal-track.png in Resources */,
+				8259E65F1A3CA3F600EF45DB /* slider-default7-track@2x.png in Resources */,
+				8259E6551A3CA3F600EF45DB /* slider-default-handle@2x.png in Resources */,
+				8259E65D1A3CA3F600EF45DB /* slider-default7-handle@2x.png in Resources */,
+				8259E6601A3CA3F600EF45DB /* slider-default7-trackBackground.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8259E61A1A3C8B9A00EF45DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8259E5FF1A3C8B9A00EF45DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8259E60F1A3C8B9A00EF45DB /* ViewController.m in Sources */,
+				8259E66C1A3CA3F600EF45DB /* NMRangeSlider.m in Sources */,
+				8259E60C1A3C8B9A00EF45DB /* AppDelegate.m in Sources */,
+				8259E6091A3C8B9A00EF45DB /* main.m in Sources */,
+				824C01EF1A3DB501005B132E /* MenuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8259E6181A3C8B9A00EF45DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8259E6231A3C8B9A00EF45DB /* FLIR_One_QuickStartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8259E61E1A3C8B9A00EF45DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8259E6021A3C8B9A00EF45DB /* FLIR One QuickStart */;
+			targetProxy = 8259E61D1A3C8B9A00EF45DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8259E6101A3C8B9A00EF45DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8259E6111A3C8B9A00EF45DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8259E6151A3C8B9A00EF45DB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8259E6161A3C8B9A00EF45DB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8259E6241A3C8B9A00EF45DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anil Nandyala (FLH8786758)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anil Nandyala (FLH8786758)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "a81b1528-8ce9-4ba3-b2ce-e82e6cacc4ca";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8259E6251A3C8B9A00EF45DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anil Nandyala (FLH8786758)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anil Nandyala (FLH8786758)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "a81b1528-8ce9-4ba3-b2ce-e82e6cacc4ca";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8259E6271A3C8B9A00EF45DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anil Nandyala (FLH8786758)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anil Nandyala (FLH8786758)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FLIR",
+					One,
+					QuickStart,
+					"$(PROJECT_DIR)/FLIR",
+					One,
+					QuickStart,
+					"$(PROJECT_DIR)/FLIR",
+					One,
+					QuickStart,
+					"$(PROJECT_DIR)/FLIR",
+					One,
+					QuickStart,
+					/Users/rupesh/Downloads/FLIROneSDK,
+					/Users/rupesh/Desktop/FLIROne/FLIR,
+					One,
+					QuickStart/FLIROneSDK,
+				);
+				INFOPLIST_FILE = "FLIR One QuickStart/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a81b1528-8ce9-4ba3-b2ce-e82e6cacc4ca";
+			};
+			name = Debug;
+		};
+		8259E6281A3C8B9A00EF45DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anil Nandyala (FLH8786758)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anil Nandyala (FLH8786758)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FLIR",
+					One,
+					QuickStart,
+					"$(PROJECT_DIR)/FLIR",
+					One,
+					QuickStart,
+					"$(PROJECT_DIR)/FLIR",
+					One,
+					QuickStart,
+					"$(PROJECT_DIR)/FLIR",
+					One,
+					QuickStart,
+					/Users/rupesh/Downloads/FLIROneSDK,
+					/Users/rupesh/Desktop/FLIROne/FLIR,
+					One,
+					QuickStart/FLIROneSDK,
+				);
+				INFOPLIST_FILE = "FLIR One QuickStart/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a81b1528-8ce9-4ba3-b2ce-e82e6cacc4ca";
+			};
+			name = Release;
+		};
+		8259E62A1A3C8B9A00EF45DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FLIR One QuickStartTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLIR One QuickStart.app/FLIR One QuickStart";
+			};
+			name = Debug;
+		};
+		8259E62B1A3C8B9A00EF45DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FLIR One QuickStartTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLIR One QuickStart.app/FLIR One QuickStart";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8259E5FE1A3C8B9A00EF45DB /* Build configuration list for PBXProject "FLIR One QuickStart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8259E6241A3C8B9A00EF45DB /* Debug */,
+				8259E6251A3C8B9A00EF45DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8259E6261A3C8B9A00EF45DB /* Build configuration list for PBXNativeTarget "FLIR One QuickStart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8259E6271A3C8B9A00EF45DB /* Debug */,
+				8259E6281A3C8B9A00EF45DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8259E6291A3C8B9A00EF45DB /* Build configuration list for PBXNativeTarget "FLIR One QuickStartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8259E62A1A3C8B9A00EF45DB /* Debug */,
+				8259E62B1A3C8B9A00EF45DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8259E5FB1A3C8B9A00EF45DB /* Project object */;
+}
