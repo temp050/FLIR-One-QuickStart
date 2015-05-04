@@ -2,7 +2,7 @@
 #import <FLIROneSDK/FLIROneSDK.h>
 #import "NMRangeSlider.h"
 #import <MessageUI/MessageUI.h>
-@interface ViewController : UIViewController<FLIROneSDKImageReceiverDelegate,FLIROneSDKStreamManagerDelegate,MFMessageComposeViewControllerDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface ViewController : UIViewController<FLIROneSDKImageReceiverDelegate,FLIROneSDKStreamManagerDelegate, FLIROneSDKVideoRendererDelegate,MFMessageComposeViewControllerDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property(strong,nonatomic)IBOutlet UIImageView *thermalImageView;
 //@property(strong,nonatomic)UIImage *thermalImage,*thermalImage1;
@@ -10,6 +10,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *upperLabel;
 @property (weak, nonatomic) IBOutlet NMRangeSlider *labelSlider;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segment;
+@property (weak, nonatomic) IBOutlet UIButton *recordButton;
 @property (assign, nonatomic) BOOL shouldSendSMS;
 @property (assign, nonatomic) BOOL shouldFlashLight;
 @property (assign, nonatomic) BOOL shouldBuzz;
@@ -23,6 +24,8 @@
 -(void)call;
 -(void)vibrate;
 -(void)takePhoto;
+
+- (IBAction)recordVideo:(id)sender;
 
 //@property (strong, nonatomic) NSData *thermalData;
 //@property (nonatomic) CGSize thermalSize;

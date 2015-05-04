@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8213E18F1AF503A90071A570 /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8213E18E1AF503A90071A570 /* FLIROneSDK.framework */; };
-		8213E1911AF504360071A570 /* FLIROneSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8213E1901AF504360071A570 /* FLIROneSDK.bundle */; };
 		824C01EF1A3DB501005B132E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 824C01EE1A3DB501005B132E /* MenuViewController.m */; };
 		824C01F11A3DBAC3005B132E /* playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 824C01F01A3DBAC3005B132E /* playbutton.png */; };
 		8259E6091A3C8B9A00EF45DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8259E6081A3C8B9A00EF45DB /* main.m */; };
@@ -46,6 +44,8 @@
 		8259E66A1A3CA3F600EF45DB /* slider-metal-trackBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E64E1A3CA3F600EF45DB /* slider-metal-trackBackground.png */; };
 		8259E66B1A3CA3F600EF45DB /* slider-metal-trackBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8259E64F1A3CA3F600EF45DB /* slider-metal-trackBackground@2x.png */; };
 		8259E66C1A3CA3F600EF45DB /* NMRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8259E6511A3CA3F600EF45DB /* NMRangeSlider.m */; };
+		D2593C7D1AF712BF009F0EB2 /* FLIROneSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2593C7B1AF712BF009F0EB2 /* FLIROneSDK.bundle */; };
+		D2593C7E1AF712BF009F0EB2 /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2593C7C1AF712BF009F0EB2 /* FLIROneSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +59,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8213E18E1AF503A90071A570 /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLIROneSDK.framework; path = "../../../../Desktop/FLIROne/FLIR One QuickStart/FLIROneSDK/FLIROneSDK.framework"; sourceTree = "<group>"; };
-		8213E1901AF504360071A570 /* FLIROneSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FLIROneSDK.bundle; path = "../../../../Desktop/FLIROne/FLIR One QuickStart/FLIROneSDK/FLIROneSDK.bundle"; sourceTree = "<group>"; };
 		824C01ED1A3DB501005B132E /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		824C01EE1A3DB501005B132E /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		824C01F01A3DBAC3005B132E /* playbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbutton.png; sourceTree = "<group>"; };
@@ -106,6 +104,8 @@
 		8259E64F1A3CA3F600EF45DB /* slider-metal-trackBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-metal-trackBackground@2x.png"; sourceTree = "<group>"; };
 		8259E6501A3CA3F600EF45DB /* NMRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMRangeSlider.h; sourceTree = "<group>"; };
 		8259E6511A3CA3F600EF45DB /* NMRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMRangeSlider.m; sourceTree = "<group>"; };
+		D2593C7B1AF712BF009F0EB2 /* FLIROneSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FLIROneSDK.bundle; path = ../../../../frameworks/FLIROneSDK/FLIROneSDK.bundle; sourceTree = "<group>"; };
+		D2593C7C1AF712BF009F0EB2 /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLIROneSDK.framework; path = ../../../../frameworks/FLIROneSDK/FLIROneSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +113,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8213E18F1AF503A90071A570 /* FLIROneSDK.framework in Frameworks */,
 				8259E6311A3C8C5C00EF45DB /* libstdc++.dylib in Frameworks */,
+				D2593C7E1AF712BF009F0EB2 /* FLIROneSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,8 +169,8 @@
 		8259E6061A3C8B9A00EF45DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8213E1901AF504360071A570 /* FLIROneSDK.bundle */,
-				8213E18E1AF503A90071A570 /* FLIROneSDK.framework */,
+				D2593C7B1AF712BF009F0EB2 /* FLIROneSDK.bundle */,
+				D2593C7C1AF712BF009F0EB2 /* FLIROneSDK.framework */,
 				8259E6071A3C8B9A00EF45DB /* Info.plist */,
 				8259E6081A3C8B9A00EF45DB /* main.m */,
 			);
@@ -351,7 +351,7 @@
 				8259E6621A3CA3F600EF45DB /* slider-default7-trackCrossedOver.png in Resources */,
 				8259E6631A3CA3F600EF45DB /* slider-default7-trackCrossedOver@2x.png in Resources */,
 				8259E6531A3CA3F600EF45DB /* slider-default-handle-highlighted@2x.png in Resources */,
-				8213E1911AF504360071A570 /* FLIROneSDK.bundle in Resources */,
+				D2593C7D1AF712BF009F0EB2 /* FLIROneSDK.bundle in Resources */,
 				824C01F11A3DBAC3005B132E /* playbutton.png in Resources */,
 				8259E6651A3CA3F600EF45DB /* slider-metal-handle-highlighted@2x.png in Resources */,
 				8259E6641A3CA3F600EF45DB /* slider-metal-handle-highlighted.png in Resources */,
@@ -431,7 +431,7 @@
 		8259E6241A3C8B9A00EF45DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -463,9 +463,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				PROVISIONING_PROFILE = "a81b1528-8ce9-4ba3-b2ce-e82e6cacc4ca";
 				SDKROOT = iphoneos;
 			};
@@ -474,7 +475,7 @@
 		8259E6251A3C8B9A00EF45DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -500,8 +501,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PROVISIONING_PROFILE = "a81b1528-8ce9-4ba3-b2ce-e82e6cacc4ca";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -511,30 +513,16 @@
 		8259E6271A3C8B9A00EF45DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Anil Nandyala (FLH8786758)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anil Nandyala (FLH8786758)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/FLIR",
-					One,
-					QuickStart,
-					"$(PROJECT_DIR)/FLIR",
-					One,
-					QuickStart,
-					"$(PROJECT_DIR)/FLIR",
-					One,
-					QuickStart,
-					"$(PROJECT_DIR)/FLIR",
-					One,
-					QuickStart,
-					/Users/rupesh/Downloads/FLIROneSDK,
-					/Users/rupesh/Desktop/FLIROne/FLIR,
-					One,
-					QuickStart/FLIROneSDK,
+					/Users/doe/frameworks/FLIROneSDK,
 				);
 				INFOPLIST_FILE = "FLIR One QuickStart/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -545,30 +533,16 @@
 		8259E6281A3C8B9A00EF45DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Anil Nandyala (FLH8786758)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anil Nandyala (FLH8786758)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/FLIR",
-					One,
-					QuickStart,
-					"$(PROJECT_DIR)/FLIR",
-					One,
-					QuickStart,
-					"$(PROJECT_DIR)/FLIR",
-					One,
-					QuickStart,
-					"$(PROJECT_DIR)/FLIR",
-					One,
-					QuickStart,
-					/Users/rupesh/Downloads/FLIROneSDK,
-					/Users/rupesh/Desktop/FLIROne/FLIR,
-					One,
-					QuickStart/FLIROneSDK,
+					/Users/doe/frameworks/FLIROneSDK,
 				);
 				INFOPLIST_FILE = "FLIR One QuickStart/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

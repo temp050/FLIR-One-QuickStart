@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>40BF85FD-5EB0-4DE2-858D-268A2360FE00</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FLIR One QuickStart</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B6498FB6FC076E54EEE929897482F3037EADADE0</key>
+		<string>https://github.com/paul-vtd/FLIR-One-QuickStart.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FLIR One QuickStart.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B6498FB6FC076E54EEE929897482F3037EADADE0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/paul-vtd/FLIR-One-QuickStart.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B6498FB6FC076E54EEE929897482F3037EADADE0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B6498FB6FC076E54EEE929897482F3037EADADE0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FLIR-One-QuickStart</string>
+		</dict>
+	</array>
+</dict>
+</plist>

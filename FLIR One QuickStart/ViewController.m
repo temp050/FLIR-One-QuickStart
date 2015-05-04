@@ -12,6 +12,8 @@
 @property (strong, nonatomic) UIImage *thermalImage;
 @property (strong, nonatomic) UIImage *thermalImage1;
 @property (assign, nonatomic) BOOL thermalStatus;
+@property (nonatomic) BOOL isRecordVideo;
+@property (strong, nonatomic) NSURL *mediaPath;
 
 @end
 
@@ -29,8 +31,9 @@
     self.upperLabel.text=@"130";
     self.shouldFlashLight=NO;
     self.shouldSendSMS=NO;
-
-
+    self.isRecordVideo = NO;
+    
+    self.mediaPath = [[FLIROneSDKLibraryManager sharedInstance] mediaPath];
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -54,7 +57,7 @@
         {
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.thermalImage1=self.thermalImage;
-                // [self updateUI];
+                //[self updateUI];
                 self.thermalImageView.image=[self modifyImage:self.thermalImage1];
             });
         }
@@ -106,6 +109,15 @@
     
     //[self updateUI];
 }
+
+- (void)FLIROneSDKDidFinishWritingVideo:(FLIROneSDKCaptureStatus)captureWriteStatus withFilepath:(NSURL *)filepath {
+    // Share video to camera roll
+    [FLIROneSDKShareActivity presentActivityViewControllerWithFilepaths:[[FLIROneSDKLibraryManager sharedInstance] filepaths] withViewController:self];
+    // Show message
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Finish Video Recording" message:[filepath absoluteString] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+
 -(void)updateUI
 {
   //  [self.thermalImageView setImage:self.thermalImage];
@@ -507,6 +519,25 @@
                          }];
     }
 
+}
+
+- (IBAction)recordVideo:(id)sender {
+    if (self.isRecordVideo) {
+        // Stop video recording
+        self.isRecordVideo = NO;
+        // Update button status
+        [[self recordButton] setImage:[UIImage imageNamed:@"RecordVideo1"] forState:UIControlStateNormal];
+        
+        [[FLIROneSDKStreamManager sharedInstance] stopRecordingVideo];
+    }
+    else {
+        // Start video recording
+        self.isRecordVideo = YES;
+        // Update button status
+        [[self recordButton] setImage:[UIImage imageNamed:@"RecordVideo2"] forState:UIControlStateNormal];
+        
+        [[FLIROneSDKStreamManager sharedInstance] startRecordingVideoWithFilepath:self.mediaPath withVideoRendererDelegate:nil];
+    }
 }
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
